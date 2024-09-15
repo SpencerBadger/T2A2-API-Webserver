@@ -117,7 +117,7 @@ class Show(db.Model):
 erDiagram
     %% table name: Users
     User {
-        integer id PK ""
+        integer id PK "One User to many shows"
         string name ""
         string email ""
         string password ""
@@ -130,10 +130,11 @@ erDiagram
         string title ""
         string description ""
         date date_created ""
-        integer user_id FK ""
+        integer user_id FK "Many shows to one user."
     }
 
-    User }o--|| Show : "" 
+    User }o--|| Show : ""
+
     Show }o--|| User : "" 
 ```
 
