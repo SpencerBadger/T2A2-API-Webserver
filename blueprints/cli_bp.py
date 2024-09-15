@@ -34,10 +34,10 @@ def db_create():
         Show(title='Titanic',description='Romcom', date_created=date.today(),user_id=users[0].id),
         Show(title='Warcraft',description='Awesome', date_created=date.today(),user_id=users[0].id),
         Show(title='Bill and Ted',description='Excellent', date_created=date.today(),user_id=users[0].id),
-        Show(title='Tsk Tsk',description='Silent', date_created=date.today(),user_id=users[0].id),
+        Show(title='Tsk Tsk',description='Silent', date_created=date.today(),user_id=users[1].id),
     ]
     
     db.session.add_all(shows)
     db.session.commit()
 
-    print('Users, Shows seeded.')
+    print('Users created, Shows seeded.')

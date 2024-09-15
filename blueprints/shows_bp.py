@@ -22,8 +22,6 @@ def one_Show(id):
         required: true
         description: The ID of the Show
     """
-    # Show = db.get_or_404(Show, id)
-    # return ShowSchema().dump(Show), 200
     show = db.session.get(Show,id)
     if not show:
         abort(404,description=f'Show with id {id} not found')

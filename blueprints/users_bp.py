@@ -35,7 +35,7 @@ def create_user():
 
     user = User(
         email=user_info['email'],
-        password=hashed_password,  # Save hashed password
+        password=hashed_password,
         name=user_info.get('name'),
         is_admin=user_info.get('is_admin', False)  # Default to False if is_admin not provided
     )

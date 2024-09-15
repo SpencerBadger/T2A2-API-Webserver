@@ -65,7 +65,7 @@ JWTs ensures secure comms through the use of encription to ensure security.
 </details>
 
 ## <h2 style="text-align:center" id="R4">R4 - Explain the benefits and drawbacks of this app’s underlying database system.</h2>
-<h3 align="center">PostgreSQL Database</h3>
+<h3 text-align="center">PostgreSQL Database</h3>
 
 <details>
 <summary><b>Benefits</b></summary>
